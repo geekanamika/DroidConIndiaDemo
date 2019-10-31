@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">DroidCon India</string>
+    <string name="this_is_visible_when_star_is_on_right">this is visible when star is on right</string>
+    <string name="net">basket</string>
+    <string name="ball">ball</string>
+</resources>
