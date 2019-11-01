@@ -3,16 +3,50 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:padding="@dimen/dimen_16dp"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
+    <androidx.constraintlayout.helper.widget.Flow
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:constraint_referenced_ids="basket_ball_demo,youtube_demo,sin_graph_demo"
+        app:flow_wrapMode="chain"
+        app:flow_maxElementsWrap="2"
+        app:flow_verticalGap="@dimen/dimen_16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <Button
+        android:id="@+id/youtube_demo"
+        android:textAllCaps="false"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:text="@string/youtube_demo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="188dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/sin_graph_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sin_graph_demo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="94dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:textAllCaps="false"
+        android:id="@+id/basket_ball_demo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/basket_ball_demo"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="25dp"
+        tools:ignore="MissingConstraints" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -30,7 +30,7 @@
                 motion:transitionPathRotate="0.5" />
         </KeyFrameSet>
         <OnClick motion:targetId="@+id/ball"
-            motion:clickAction="transitionToEnd"
+            motion:clickAction="toggle"
             />
     </Transition>
 
